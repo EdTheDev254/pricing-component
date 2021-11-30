@@ -1,0 +1,143 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --cyan2: hsl(179, 42%, 43%)
+}
+
+
+body,
+h1,
+h2,
+h3,
+span,
+p,
+a,
+ul,
+l {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--lightGray);
+    font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+    margin: 50px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header,.section,.footer-section {
+    padding: 20px;
+}
+
+.top-heading {
+    font-size: 16px;
+    color: var(--cyan);
+    padding-bottom: 20px;
+}
+
+.bottom-heading {
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: var(--brightYellow);
+}
+
+.header-paragraph {
+    line-height: 25px;
+}
+
+.section {
+    background-color: var(--cyan2);
+    color: white;
+
+}
+
+.section-top-heading {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.section-bottom-heading {
+    display: flex;
+    align-items: center;
+
+}
+
+.section-bottom-heading span {
+    color: var(--lightGray);
+    font-size: 12px;
+}
+
+.section-paragraph {
+    padding-bottom: 20px;
+}
+
+.button-class {
+    display: flex;
+    padding-top: 20px;
+}
+
+button {
+    margin: 0 auto;
+    border: none;
+    background-color: var(--brightYellow);
+    border-radius: 4px;
+    padding: 10px 40%;
+    color: white;
+    font-size: 14px;
+
+}
+
+.footer-section {
+
+    background-color: var(--cyan);
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer-heading {
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 6px;
+}
+
+
+@media (min-width:768px) {
+
+    body {
+        margin: 0 auto;
+    }
+    .header {
+        padding: 20px;
+        grid-column: span 2;
+    }
+    .header,.section,.footer-section {
+        padding: 30px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:10% 25%;
+    }
+
+    .section {
+        border-radius: 0 0 0 12px;
+    }
+    .section-bottom-heading {
+        font-size: 40px;
+    }
+    .footer-section {
+        border-radius: 0 0 12px 0;
+    }
+}
